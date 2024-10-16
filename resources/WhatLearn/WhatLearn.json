@@ -1,0 +1,23 @@
+[
+  {
+    "id": "text-icon-1",
+    "icon": "../../resources/WhatLearn/WhatLearn1.png",
+    "alt": "JavaScript",
+    "title": "JavaScript + Git",
+    "subtitle": "Mempelajari dasar-dasar JavaScript dengan materi tambahan git."
+  },
+  {
+    "id": "text-icon-2",
+    "icon": "../../resources/WhatLearn/WhatLearn2.png",
+    "alt": "FE Basic",
+    "title": "Frontend Basic",
+    "subtitle": "Mempelajari HTML dan CSS dengan fokus dalam pembuatan layout website."
+  },
+  {
+    "id": "text-icon-3",
+    "icon": "../../resources/WhatLearn/WhatLearn3.png",
+    "alt": "React",
+    "title": "React + Tailwind",
+    "subtitle": "Mempelajari tools yang digunakan dalam pembuatan website modern."
+  }
+]
