@@ -1,5 +1,5 @@
 import TextIcon from '../Components/TextIcon';
-import Data from '../../resources/WhatLearn/WhatLearn.json'
+import Data from '../assets/WhatLearn.json';
 
 export default function WhatLearn() {
   return (
