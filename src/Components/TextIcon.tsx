@@ -8,12 +8,12 @@ export default function TextIcon(props: {
   return (
     <div
       id={`${props.id}-container`}
-      className="flex flex-row
-            w-[26rem] min-h-[10em]"
+      className="flex flex-col md:flex-row justify-center items-center md:items-start
+            md:w-[26rem] min-h-[10em]"
     >
       <div
         id={`${props.id}-icon`}
-        className="bg-[#758d9b] p-[1.5rem] m-[1.5rem] rounded-[1.5rem] h-fit w-fit"
+        className="bg-[#758d9b] md:p-[1.5rem] md:m-[1.5rem] rounded-[1.5rem] h-fit w-fit"
       >
         <img
           src={props.icon}
