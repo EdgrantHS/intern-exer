@@ -4,61 +4,34 @@ export default function Hero() {
   return (
     <div
       id="landing-container"
-      className="
-            xl:w-[1140px] h-full
-              w-full
-            font-inter text-black
-            flex flex-row-reverse flex-wrap justify-between
-          "
+      className="font-inter flex h-full w-full flex-row-reverse flex-wrap justify-between text-black xl:w-[1140px]"
     >
       <div
         id="landing-image"
-        className="
-              md:w-[40%] md:h-full pt-12
-                h-1/2 w-full 
-              relative
-            "
+        className="relative h-1/2 w-full pt-12 md:h-full md:w-[40%]"
       >
         <img
           src={HeroImg}
           alt="GioStare"
-          className="
-                w-full h-full object-contain z-10
-                drop-shadow-lg
-                hover:scale-110 duration-1000 transition-all
-              "
+          className="z-10 h-full w-full object-contain drop-shadow-lg transition-all duration-1000 hover:scale-110"
         />
       </div>
 
       <div
         id="landing-text-container"
-        className="
-              flex flex-col 
-              justify-center
-              md:w-[60%] md:h-full md:items-start
-                h-1/2 w-full items-center
-              p-12
-            "
+        className="flex h-1/2 w-full flex-col items-center justify-center p-12 md:h-full md:w-[60%] md:items-start"
       >
         <h1
           id="landing-title"
-          className="
-                text-4xl font-semibold text-black
-                md:text-start
-                  text-center
-            "
+          className="text-center text-4xl font-semibold text-black md:text-start"
         >
           Welcome to Internship Exercise{" "}
-          <p className="text-primary font-bold">Front End</p>
+          <p className="font-bold text-primary">Front End</p>
         </h1>
 
         <p
           id="landing-subtitle"
-          className="
-                mt-4 text-secondary
-                md:text-start
-                  text-center
-              "
+          className="mt-4 text-center text-secondary md:text-start"
         >
           Website ini dibuat oleh Edgrant sebagai sarana pembelajaran Front End.
           Terdapat sumber belajar dan juga website ini sendiri dapat jadi sumber
@@ -68,14 +41,7 @@ export default function Hero() {
         <a href="https://github.com/EdgrantHS/intern-exer">
           <button
             id="landing-button"
-            className="
-                  bg-primary
-                  text-white
-                  font-bold text-lg
-                  px-6 py-2 rounded-2xl w-fit mt-8
-                  hover:scale-110 duration-300 transition-all
-                  font-poppins
-                "
+            className="font-poppins mt-8 w-fit rounded-2xl bg-primary px-6 py-2 text-lg font-bold text-white transition-all duration-300 hover:scale-110"
           >
             Repository
           </button>

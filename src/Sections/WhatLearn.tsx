@@ -20,18 +20,11 @@ export default function WhatLearn(props: { showButton?: boolean }) {
   return (
     <div
       id="landing-container"
-      className={`
-        w-fit h-full md:px-6 pb-6 ${props.showButton ? "pt-12" : "pt-6"}
-        font-inter text-white bg-secondary rounded-[1rem]
-        flex flex-col justify-center items-center
-      `}
+      className={`h-full w-fit pb-6 md:px-6 ${props.showButton ? "pt-12" : "pt-6"} font-inter flex flex-col items-center justify-center rounded-[1rem] bg-secondary text-white`}
     >
       <div
         id="landing-container"
-        className={`
-        sm:w-[420px] w-[360px] md:w-fit h-fit justify-center text-center md:text-start
-        flex flex-wrap ${props.showButton ? "gap-12" : "gap-12 md:gap-4 flex-col"}
-      `}
+        className={`flex h-fit w-[360px] flex-wrap justify-center text-center sm:w-[420px] md:w-fit md:text-start ${props.showButton ? "gap-12" : "flex-col gap-12 md:gap-4"} `}
       >
         {Data.map((item) => (
           <TextIcon
@@ -47,14 +40,7 @@ export default function WhatLearn(props: { showButton?: boolean }) {
       {props.showButton && (
         <button
           id="landing-button"
-          className="
-                  bg-primary
-                  text-white
-                  font-bold text-lg
-                  px-6 py-3 rounded-2xl w-fit mt-16 md:mt-8
-                  hover:scale-110 duration-300 transition-all
-                  font-poppins
-                "
+          className="font-poppins mt-16 w-fit rounded-2xl bg-primary px-6 py-3 text-lg font-bold text-white transition-all duration-300 hover:scale-110 md:mt-8"
           onClick={handleViewResources}
         >
           View Resources

@@ -8,24 +8,23 @@ export default function TextIcon(props: {
   return (
     <div
       id={`${props.id}-container`}
-      className="flex flex-col md:flex-row justify-center items-center md:items-start
-            md:w-[26rem] min-h-[10em]"
+      className="flex min-h-[10em] flex-col items-center justify-center md:w-[26rem] md:flex-row md:items-start"
     >
       <div
         id={`${props.id}-icon`}
-        className="bg-[#758d9b] md:p-[1.5rem] md:m-[1.5rem] rounded-[1.5rem] h-fit w-fit"
+        className="h-fit w-fit rounded-[1.5rem] bg-[#758d9b] md:m-[1.5rem] md:p-[1.5rem]"
       >
         <img
           src={props.icon}
           alt={props.alt}
-          className="object-contain w-14 h-14"
+          className="h-14 w-14 object-contain"
         />
       </div>
 
-      <div id={`${props.id}-text-box`} className="flex flex-col w-[16.5rem]">
+      <div id={`${props.id}-text-box`} className="flex w-[16.5rem] flex-col">
         <h1
           id={`${props.id}-title`}
-          className="text-2xl font-bold mb-4 my-[1.5rem]"
+          className="my-[1.5rem] mb-4 text-2xl font-bold"
         >
           {props.title}
         </h1>

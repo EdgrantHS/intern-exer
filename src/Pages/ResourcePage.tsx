@@ -12,29 +12,26 @@ export default function ResourcePage() {
   }
 
   return (
-    <main
-      className="min-h-screen w-screen flex flex-col items-center
-     bg-gradient-to-b from-tertiary to-white"
-    >
-      <h1 className="text-4xl font-bold h-fit w-fit py-4 px-8 text-white bg-primary rounded-full drop-shadow text-center my-8 mb-16">
+    <main className="flex min-h-screen w-screen flex-col items-center bg-gradient-to-b from-tertiary to-white">
+      <h1 className="my-8 mb-16 h-fit w-fit rounded-full bg-primary px-8 py-4 text-center text-4xl font-bold text-white drop-shadow">
         Our Front End Resources
       </h1>
 
-      <div id="floating-back-button" className="fixed top-4 right-4 z-10">
+      <div id="floating-back-button" className="fixed right-4 top-4 z-10">
         <button
-          className="w-fit h-fit flex items-center justify-center bg-white border-4 border-primary text-secondary font-bold text-lg px-6 py-2 drop-shadow rounded-2xl mt-8 hover:scale-110 duration-300 transition-all font-poppins"
+          className="font-poppins mt-8 flex h-fit w-fit items-center justify-center rounded-2xl border-4 border-primary bg-white px-6 py-2 text-lg font-bold text-secondary drop-shadow transition-all duration-300 hover:scale-110"
           onClick={handleBack}
         >
-          <img src={Back} alt="Back" className="w-6 h-6 inline-block" />
+          <img src={Back} alt="Back" className="inline-block h-6 w-6" />
         </button>
       </div>
 
-      <section className="max-w-[1432px] px-4 w-screen flex lg:flex-row flex-col justify-center gap-24 lg:items-start items-center">
-        <div className="mb-16 w-fit flex justify-center items-center drop-shadow">
+      <section className="flex w-screen max-w-[1432px] flex-col items-center justify-center gap-24 px-4 lg:flex-row lg:items-start">
+        <div className="mb-16 flex w-fit items-center justify-center drop-shadow">
           <WhatLearn showButton={false} />
         </div>
 
-        <div className="w-fit h-fit md:hidden">
+        <div className="h-fit w-fit md:hidden">
           <iframe
             src="https://drive.google.com/file/d/1xkD4oj5lBV_aMxGSDMCLsILqvWya83Zc/preview"
             width="360"
@@ -43,7 +40,7 @@ export default function ResourcePage() {
           ></iframe>
         </div>
 
-        <div className="w-fit h-fit hidden md:flex">
+        <div className="hidden h-fit w-fit md:flex">
           <iframe
             src="https://drive.google.com/file/d/1xkD4oj5lBV_aMxGSDMCLsILqvWya83Zc/preview"
             width="640"
@@ -51,7 +48,6 @@ export default function ResourcePage() {
             allow="autoplay"
           ></iframe>
         </div>
-
       </section>
     </main>
   );
